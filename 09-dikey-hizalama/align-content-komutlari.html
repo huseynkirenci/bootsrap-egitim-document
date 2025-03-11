@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <!-- Gerekli meta etiketleri -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/extra.css">
+    <title>Bootstrap!</title>
+</head>
+<body>
+<div class="container mt-1">
+    <h1>align-content</h1>
+    <p>Bu yapı, birden fazla satırları dikeyde hizalamak için tercih edilir.</p>
+
+    <!-- align-content-center ile Flexbox -->
+    <h2>align-content-center ile Flexbox</h2>
+    <p>Bu düzen, <strong>align-content-center</strong> sınıfını kullanarak flex konteynerindeki içeriği dikey olarak ortalar.</p>
+    <div class="d-flex flex-wrap bg-secondary p-3 text-white mb-4 align-content-center" style="height: 300px">
+        <div class="p-3 border border-2 bg-info">Flex 1</div>
+        <div class="p-3 border border-2 bg-dark">Flex 2</div>
+        <div class="p-3 border border-2 bg-danger">Flex 3</div>
+        <div class="p-3 border border-2 bg-info">Flex 4</div>
+        <div class="p-3 border border-2 bg-dark">Flex 5</div>
+        <div class="p-3 border border-2 bg-danger">Flex 6</div>
+        <div class="p-3 border border-2 bg-info">Flex 7</div>
+        <div class="p-3 border border-2 bg-dark">Flex 8</div>
+        <div class="p-3 border border-2 bg-danger">Flex 9</div>
+        <div class="p-3 border border-2 bg-info">Flex 10</div>
+    </div>
+
+    <!-- align-content-stretch ile Flexbox -->
+    <h2>align-content-stretch ile Flexbox</h2>
+    <p>Bu düzen, <strong>align-content-stretch</strong> sınıfını kullanarak flex konteynerinin içeriğini gerer.</p>
+    <div class="d-flex flex-wrap bg-secondary p-3 text-white mb-4 align-content-stretch" style="height: 300px">
+        <div class="p-3 border border-2 bg-info">Flex 1</div>
+        <div class="p-3 border border-2 bg-dark">Flex 2</div>
+        <div class="p-3 border border-2 bg-danger">Flex 3</div>
+        <div class="p-3 border border-2 bg-info">Flex 4</div>
+        <div class="p-3 border border-2 bg-dark">Flex 5</div>
+        <div class="p-3 border border-2 bg-danger">Flex 6</div>
+        <div class="p-3 border border-2 bg-info">Flex 7</div>
+        <div class="p-3 border border-2 bg-dark">Flex 8</div>
+        <div class="p-3 border border-2 bg-danger">Flex 9</div>
+        <div class="p-3 border border-2 bg-info">Flex 10</div>
+    </div>
+
+    <!-- Birkaç farklı align-content seçeneği ile Flexbox -->
+    <h2>Birçok align-content seçeneği ile Flexbox</h2>
+    <p>Bu düzen, <strong>align-content-start</strong>, <strong>align-content-md-center</strong>, <strong>align-content-lg-end</strong>, <strong>align-content-xl-around</strong> ve <strong>align-content-xxl-stretch</strong> gibi birçok farklı align-content sınıfını gösterir.</p>
+    <div class="d-flex flex-wrap bg-secondary p-3 text-white mb-4 align-content-start align-content-md-center align-content-lg-end align-content-xl-around align-content-xxl-stretch" style="height: 300px">
+        <div class="p-3 border border-2 bg-info">Flex 1</div>
+        <div class="p-3 border border-2 bg-dark">Flex 2</div>
+        <div class="p-3 border border-2 bg-danger">Flex 3</div>
+        <div class="p-3 border border-2 bg-info">Flex 4</div>
+        <div class="p-3 border border-2 bg-dark">Flex 5</div>
+        <div class="p-3 border border-2 bg-danger">Flex 6</div>
+        <div class="p-3 border border-2 bg-info">Flex 7</div>
+        <div class="p-3 border border-2 bg-dark">Flex 8</div>
+        <div class="p-3 border border-2 bg-danger">Flex 9</div>
+        <div class="p-3 border border-2 bg-info">Flex 10</div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

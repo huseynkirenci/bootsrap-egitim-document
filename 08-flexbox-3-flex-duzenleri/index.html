@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Flexbox Dökümanı</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/extra.css">
+</head>
+<body>
+
+<div class="container mt-4">
+
+    <!-- Başlık 1: Temel Flexbox Düzeni -->
+    <h2 class="info-box">1. Flex-fill</h2>
+    <p>Bu örnekte, her öğe eşit genişlikte olacak şekilde flex düzeni oluşturulmuştur.</p>
+    <div class="d-flex bg-secondary p-3 text-white mb-4">
+        <div class="p-2 flex-fill bg-info">Flex 1</div>
+        <div class="p-2 flex-fill bg-dark">Flex 2</div>
+        <div class="p-2 flex-fill bg-danger">Flex 3</div>
+    </div>
+
+    <!-- Başlık 2: Grow, Shrink ve Flexbox Özellikleri -->
+    <h2 class="info-box">2. Grow, Shrink ve Flexbox Özellikleri</h2>
+    <p>Bu örnekte flex-grow ve flex-shrink özellikleri kullanılarak öğelerin büyüme ve küçülme oranları kontrol edilir.</p>
+    <div class="d-flex bg-secondary p-3 text-white mb-4">
+        <div class="p-2 flex-grow-1 flex-lg-grow-0 bg-info">Flex 1</div>
+        <div class="p-2 flex-grow-0 bg-dark">Flex 2</div>
+        <div class="p-2 bg-danger">Fark yok</div>
+    </div>
+
+    <!-- Başlık 3: Flexbox Shrink Özelliği -->
+    <h2 class="info-box">3. Flexbox Shrink Özelliği</h2>
+    <p>Flex-shrink özelliği ile öğenin küçük alanlarda küçülmesi engellenebilir.</p>
+    <div class="d-flex bg-secondary p-3 text-white mb-4">
+        <div class="p-2 bg-info">Flex 1</div>
+        <div class="p-2 bg-dark">Flex 2</div>
+        <div class="p-2 flex-shrink-0 bg-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, veniam. Lorem ipsum dolor sit amet, consectetur.</div>
+    </div>
+
+    <!-- Başlık 4: Auto Margins ile Flexbox Düzeni -->
+    <h2>4. Auto Margins ile Flexbox Düzeni</h2>
+    <p>Auto margin kullanarak öğelerin arasındaki boşluğu düzenlemek mümkündür.</p>
+    <div class="d-flex bg-secondary p-3 text-white mb-4">
+        <div class="p-2 me-auto bg-info">Flex 1 me-auto</div>
+        <div class="p-2 bg-dark">Flex 2</div>
+        <div class="p-2 bg-danger">Flex 3</div>
+    </div>
+
+    <!-- Başlık 5: Flexbox ile Sıra Düzeni -->
+    <h2>5. Flexbox order</h2>
+    <p>Öğelerin sıralamasını değiştirmek için order özelliği kullanılır.</p>
+    <div class="d-flex bg-secondary p-3 text-white mb-4">
+        <div class="p-2 order-5 bg-info">Flex 1</div>
+        <div class="p-2 order-3 bg-dark">Flex 2</div>
+        <div class="p-2 order-1 bg-danger">Flex 3</div>
+        <div class="p-2 order-2 bg-dark">Flex 4</div>
+        <div class="order-4 p-2 bg-danger">Flex 5</div>
+    </div>
+
+    <!-- Başlık 6: Wrap ve Wrap-Reverse ile Flexbox Düzeni -->
+    <h2>6. Wrap ve Wrap-Reverse ile Flexbox Düzeni</h2>
+    <p>Flex öğeleri, alanı doldurmak için sarmalayıcı (wrap) kullanılarak düzenlenebilir. Wrap-reverse ile öğelerin sırası tersine çevrilebilir.</p>
+    <div class="d-flex flex-wrap bg-secondary p-3 text-white mb-4">
+        <div class="p-2 border border-2 bg-info">Flex 1</div>
+        <div class="p-2 border border-2 bg-dark">Flex 2</div>
+        <div class="p-2 border border-2 bg-danger">Flex 3</div>
+        <div class="p-2 border border-2 bg-info">Flex 4</div>
+        <div class="p-2 border border-2 bg-dark">Flex 5</div>
+        <div class="p-2 border border-2 bg-danger">Flex 6</div>
+        <div class="p-2 border border-2 bg-info">Flex 7</div>
+        <div class="p-2 border border-2 bg-dark">Flex 8</div>
+        <div class="p-2 border border-2 bg-danger">Flex 9</div>
+        <div class="p-2 border border-2 bg-info">Flex 10</div>
+        <div class="p-2 border border-2 bg-dark">Flex 11</div>
+        <div class="p-2 border border-2 bg-danger">Flex 12</div>
+        <div class="p-2 border border-2 bg-info">Flex 13</div>
+        <div class="p-2 border border-2 bg-dark">Flex 14</div>
+        <div class="p-2 border border-2 bg-danger">Flex 15</div>
+        <div class="p-2 border border-2 bg-info">Flex 16</div>
+        <div class="p-2 border border-2 bg-dark">Flex 17</div>
+        <div class="p-2 border border-2 bg-danger">Flex 18</div>
+    </div>
+
+    <!-- Başlık 7: flex-nowrap-reverse ile Flexbox Düzeni -->
+    <h2>7. flex-nowrap-reverse</h2>
+    <p>Bu, paragrafın tüm içeriğinin bir satırda kalmasını sağlar.</p>
+    <div class="d-flex flex-nowrap-reverse bg-secondary p-3 text-white mb-4">
+        <div class="p-2 border border-2 bg-info">Flex 1</div>
+        <div class="p-2 border border-2 bg-dark">Flex 2</div>
+        <div class="p-2 border border-2 bg-danger">Flex 3</div>
+        <div class="p-2 border border-2 bg-info">Flex 4</div>
+        <div class="p-2 border border-2 bg-dark">Flex 5</div>
+        <div class="p-2 border border-2 bg-danger">Flex 6</div>
+        <div class="p-2 border border-2 bg-info">Flex 7</div>
+        <div class="p-2 border border-2 bg-dark">Flex 8</div>
+        <div class="p-2 border border-2 bg-danger">Flex 9</div>
+        <div class="p-2 border border-2 bg-info">Flex 10</div>
+        <div class="p-2 border border-2 bg-dark">Flex 11</div>
+        <div class="p-2 border border-2 bg-danger">Flex 12</div>
+        <div class="p-2 border border-2 bg-info">Flex 13</div>
+        <div class="p-2 border border-2 bg-dark">Flex 14</div>
+        <div class="p-2 border border-2 bg-danger">Flex 15</div>
+        <div class="p-2 border border-2 bg-info">Flex 16</div>
+        <div class="p-2 border border-2 bg-dark">Flex 17</div>
+        <div class="p-2 border border-2 bg-danger">Flex 18</div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
