@@ -1,0 +1,19 @@
+h2 {
+    background-color: #f8f1d7;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.p {
+    background-color: #d7f2f8;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.h-color{
+    color: blanchedalmond;
+    background: #721c24
+}
