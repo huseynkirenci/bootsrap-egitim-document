@@ -1,0 +1,30 @@
+h2 {
+    background-color: #f8f1d7;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+p {
+    background-color: #d7f2f8;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.myHeight{
+    height: 300px;
+}
+
+.Box{
+    width:8rem;
+    height: 8rem;
+    background-color: burlywood;
+}
+
+.Box2{
+    position: fixed;
+    right: %3;
+    bottom: %3;
+}
